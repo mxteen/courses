@@ -14,11 +14,13 @@ class TestEmployee(unittest.TestCase):
         print('teardownClass')
 
     def setUp(self):
+        # This code creates 2 employees before every single test
         print('setUp')
         self.emp_1 = Employee('Corey', 'Schafer', 50000)
         self.emp_2 = Employee('Sue', 'Smith', 60000)
 
     def tearDown(self):
+        # This code could be used to delete temporary files after the test
         print('tearDown\n')
 
     def test_email(self):
