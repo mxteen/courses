@@ -7,10 +7,12 @@ class TestEmployee(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
+        # This code runs before all the tests
         print('setupClass')
 
     @classmethod
     def tearDownClass(cls):
+        # This code runs after all the tests
         print('teardownClass')
 
     def setUp(self):
