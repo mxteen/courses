@@ -1,9 +1,4 @@
-(prereq_python)=
-
 # Prerequisites
-
-```{figure} /_static/img/ods_stickers.jpg
-```
 
 The course aims at a perfect balance between theory and practice. Therefore, prerequisites include:
 
@@ -18,13 +13,6 @@ Basic skills are required: writing loops, functions, classes, etc. Passing some 
 
 You can check the placeholder below, it's from [bonus assignment 8](bonus08). If you have no clue what's happening there, better take an introductory Python course.
 
-```{figure} /_static/img/assignment8_teaser_sdg_classifier.png
-:width: 600px
-
-
-```
-```{figure} /_static/img/ods_stickers.jpg
-```
 
 ## Math
 
@@ -34,9 +22,6 @@ Whether a Data Scientist should be good at math or not -- that's a debatable que
 
 Check the expression below (it's from [bonus assignment 8](bonus08)). If you are not comfortable with the idea of taking its derivative w.r.t. to $w$, better refer to the resources listed above.
 
-```{figure} /_static/img/assignment8_teaser_update_formula.png
-:width: 600px
-```
 
 
 ## Software requirements
@@ -114,8 +99,6 @@ To start working with the course materials (i.e. Jupyter notebooks):
 - check Jupyter docs and the [interactive demo](https://jupyter.org/try) ("try classic notebook") to get hands dirty with Jupyter
 
 
-```{figure} /_static/img/intro_running_jupyter.png
-```
 
 ### Jupyter Book
 
