@@ -6,3 +6,8 @@
 
 Сответствие консольных команд Windows и Linux.
 https://white55.ru/cmd-sh.html
+
+Форматирование
+num = 2 / 3
+print(f'{num:.3f}')
+https://docs.python.org/3/library/string.html?#format-specification-mini-language
