@@ -1,0 +1,7 @@
+# Дополнительная информация по временным рядам
+
+# Часть из курса ВШЭ
+https://www.youtube.com/playlist?list=PLu5flfwrnSD6wzkzgs4TocGL5GOXmEjZE
+
+# Часть из курса [ods.ai](https://ods.ai/tracks/open-ml-course)
+https://habr.com/ru/company/ods/blog/327242/
