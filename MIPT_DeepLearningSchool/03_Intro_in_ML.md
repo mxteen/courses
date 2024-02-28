@@ -4,7 +4,7 @@
 * [презентация](https://docs.google.com/presentation/d/1yi_dbIPsMqvdUoyaaDoxsVQi0_aOjl_E/edit?usp=sharing&ouid=104379615679964018037&rtpof=true&sd=true)
 
 
-**Краткое содержание**
+**Краткое содержание** от YandexGPT
 
 00:06 Введение в машинное обучение
 

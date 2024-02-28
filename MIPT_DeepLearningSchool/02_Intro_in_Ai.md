@@ -3,7 +3,7 @@
 * [Ссылка на видео](https://www.youtube.com/watch?v=y7bf0Kk46UU)
 * [Ссылка на презентацию](https://drive.google.com/file/d/14Yc3dRmn87m_SSQbSMVOPfZi3Yt_1KYP/view?usp=sharing)
 
-Перссказ
+**Перссказ** от YandexGPT
 
 00:08 Введение в искусственный интеллект
 
