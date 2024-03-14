@@ -7,7 +7,7 @@
 * [Лекция 2.4. Градиентный спуск в линейных алгоритмах](https://www.youtube.com/watch?v=N5_VAN1nhm8)
 * [Лекция 2.5. Регуляризация в линейной регрессии](https://www.youtube.com/watch?v=L_o8v5A23XA)
 * [Лекция 2.6: Нормализация](https://www.youtube.com/watch?v=tOiwAyilk3I)
-* [Семинар. Линейная и логистическая регрессия](https://www.youtube.com/watch?v=5VOp5xmBvds)
+* [Семинар. Линейная и логистическая регрессия](https://www.youtube.com/watch?v=5VOp5xmBvds) - **хорошее видео**
 * [Семинар. Регуляризация в линейной регрессии](https://www.youtube.com/watch?v=56YdhX0xj3k)
 
 ## Лекция 2.1: Линейная регрессия
