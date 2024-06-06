@@ -1,6 +1,6 @@
 from aiogram import Bot, Dispatcher
-from aiogram.filters import Command
-from aiogram.types import Message
+from aiogram.filters import Command  # класс Command нужен, чтобы фильтровать апдейты по наличию в них команд
+from aiogram.types import Message  # класс Message - апдейты этого типа мы будем ловить эхо-ботом
 
 with open ('tg_bot.txt', 'r') as f:
     BOT_TOKEN = f.readline()
@@ -10,13 +10,13 @@ bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
 
 # Этот хэндлер будет срабатывать на команду "/start"
-@dp.message(Command(commands=["start"]))
+# @dp.message(Command(commands=["start"]))
 async def process_start_command(message: Message):
     await message.answer('Привет!\nМеня зовут Эхо-бот!\nНапиши мне что-нибудь')
 
 
 # Этот хэндлер будет срабатывать на команду "/help"
-@dp.message(Command(commands=['help']))
+# @dp.message(Command(commands=['help']))
 async def process_help_command(message: Message):
     await message.answer(
         'Напиши мне что-нибудь и в ответ '
@@ -26,10 +26,20 @@ async def process_help_command(message: Message):
 
 # Этот хэндлер будет срабатывать на любые ваши текстовые сообщения,
 # кроме команд "/start" и "/help"
-@dp.message()
+# @dp.message()
 async def send_echo(message: Message):
     await message.reply(text=message.text)
 
+
+# Регистрируем хэндлеры
+dp.message.register(process_start_command, Command(commands='start'))
+dp.message.register(process_help_command, Command(commands='help'))
+dp.message.register(send_echo)
+# То есть мы можем обращаться к полю диспетчера, отвечающего за тип сообщения,
+# которое мы хотим обработать хэндлером и вызвать у него метод register,
+# а в качестве аргументов передать ему имя хэндлера и фильтры. Регистрировать
+# хэндлеры также важно в правильном порядке, чтобы обработчики случайно
+# не перехватывали сообщения, которые для них не предназначены.
 
 if __name__ == '__main__':
     dp.run_polling(bot)
