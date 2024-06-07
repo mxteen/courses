@@ -30,6 +30,11 @@ async def send_photo_echo(message: Message):
     print(message)
     await message.reply_photo(message.photo[0].file_id)
 
+# Этот хэндлер будет срабатывать на отправку боту стикера
+async def send_sticker_echo(message: Message):
+    print(message)
+    await message.reply_sticker(message.sticker.file_id)
+
 
 # Этот хэндлер будет срабатывать на любые ваши текстовые сообщения,
 # кроме команд "/start" и "/help"
@@ -41,7 +46,8 @@ async def send_echo(message: Message):
 # Регистрируем хэндлеры
 dp.message.register(process_start_command, Command(commands='start'))
 dp.message.register(process_help_command, Command(commands='help'))
-dp.message.register(send_photo_echo, F.content_type == ContentType.PHOTO)
+dp.message.register(send_photo_echo, F.photo)
+dp.message.register(send_sticker_echo, F.sticker)
 dp.message.register(send_echo)
 # То есть мы можем обращаться к полю диспетчера, отвечающего за тип сообщения,
 # которое мы хотим обработать хэндлером и вызвать у него метод register,
